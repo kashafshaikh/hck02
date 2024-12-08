@@ -19,7 +19,7 @@ export default function Section01() {
         {/* Right Image */}
         <div className="mx-auto my-auto w-full max-w-[434px] h-auto">
           <Image
-            src="/Product Image.png"
+            src="/section01-img/Product Image.png"
             alt="chair"
             height={584}
             width={434}
