@@ -10,7 +10,7 @@ export default function Featuredproduct() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4 md:ml-0">
             <Image
-              src="/01 (1).jpg"
+              src="/(1).png"
               alt="chair"
               height={312}
               width={312}
@@ -34,7 +34,7 @@ export default function Featuredproduct() {
 
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
             <Image
-              src="/02.jpg"
+              src="/(2).png"
               alt="chair"
               height={312}
               width={312}
@@ -61,7 +61,7 @@ export default function Featuredproduct() {
 
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
             <Image
-              src="/03.jpg"
+              src="/(3).png"
               alt="chair"
               height={312}
               width={312}
@@ -78,7 +78,7 @@ export default function Featuredproduct() {
 
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
             <Image
-              src="/04.jpg"
+              src="/(4).png"
               alt="chair"
               height={312}
               width={312}

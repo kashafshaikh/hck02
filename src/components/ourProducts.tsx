@@ -10,7 +10,7 @@ export default function Ourproduct() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4 md:ml-0">
             <Image
-              src="/Image (8).png"
+              src="/(1).png"
               alt="chair"
               height={312}
               width={312}
@@ -34,7 +34,7 @@ export default function Ourproduct() {
 
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
             <Image
-              src="/Image (8).png"
+              src="/(2).png"
               alt="chair"
               height={312}
               width={312}
@@ -59,7 +59,7 @@ export default function Ourproduct() {
 
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
             <Image
-              src="/Image (8).png"
+              src="/(3).png"
               alt="chair"
               height={312}
               width={312}
@@ -76,7 +76,7 @@ export default function Ourproduct() {
 
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
             <Image
-              src="/Image (8).png"
+              src="/(4).png"
               alt="chair"
               height={312}
               width={312}
@@ -93,7 +93,7 @@ export default function Ourproduct() {
 
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4 md:ml-0">
             <Image
-              src="/Image (8).png"
+              src="/(5).png"
               alt="chair"
               height={312}
               width={312}
@@ -117,7 +117,7 @@ export default function Ourproduct() {
 
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
             <Image
-              src="/Image (8).png"
+              src="/(6).png"
               alt="chair"
               height={312}
               width={312}
@@ -142,7 +142,7 @@ export default function Ourproduct() {
 
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
             <Image
-              src="/Image (8).png"
+              src="/(7).png"
               alt="chair"
               height={312}
               width={312}
@@ -159,7 +159,7 @@ export default function Ourproduct() {
 
           <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
             <Image
-              src="/Image (8).png"
+              src="/(1).png"
               alt="chair"
               height={312}
               width={312}
