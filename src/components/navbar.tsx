@@ -2,6 +2,7 @@ import { AiOutlineExclamationCircle } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 import { LuShoppingCart } from "react-icons/lu";
 import Image from "next/image";
+import Link from "next/link";
 export default function Navbar() {
     return (
         <>
@@ -34,11 +35,13 @@ export default function Navbar() {
                  <div className="w-[150px] h-[80px] md:w-auto md:h-auto flex items-center">
                     <Image src="/Logo.png" alt="logo" height={40} width={166}/>
                  </div>
+                 <Link href="/cart">
                  <div className=" bg-white w-[120px] h-[44px] relative rounded-lg flex items-center justify-center gap-3">
                     <div><LuShoppingCart size={20}/></div>
                     <p className="text-[#272343] font-sans font-semibold">Cart</p>
                     <div className="bg-[#007580] w-[20px] h-[20px] rounded-full text-white text-xs flex justify-center items-center">2</div>
                  </div>
+                 </Link>
             </div>
         </>
     );
