@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const AboutPopularProduct = () => {
+export default function Aboutsection02(){
   return (
     <div className="max-w-screen-xl mx-auto mt-32 px-6">
       <h2 className="text-[32px] text-[#272343] font-semibold text-left mb-12">
@@ -45,5 +45,3 @@ const AboutPopularProduct = () => {
     </div>
   );
 };
-
-export default AboutPopularProduct;

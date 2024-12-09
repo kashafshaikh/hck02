@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const AboutHero = () => {
+export default function Aboutsection01(){
   return (
     <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center bg-white mt-16 md:mt-32 px-4">
       <div className="w-full md:w-[650px] h-auto md:h-[478px] bg-[#007580] p-6 flex flex-col justify-start items-start text-left text-white">
@@ -23,7 +23,7 @@ const AboutHero = () => {
       <div className="w-full md:w-[619px] h-auto md:h-[478px] mt-6 md:mt-0 md:ml-6">
         <Image
           src="/(1).png"
-          alt="Comforty Image"
+          alt="image"
           width={619}
           height={478}
           className="object-cover w-full h-full"
@@ -33,4 +33,3 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero;

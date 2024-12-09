@@ -18,13 +18,13 @@ export default function Header() {
             <Link href="/" className="hover:text-[#007580]">
               Home
             </Link>
-            <Link href="/" className="hover:text-[#007580]">
+            <Link href="/product" className="hover:text-[#007580]">
               Shop
             </Link>
-            <Link href="/" className="hover:text-[#007580]">
+            <Link href="/product" className="hover:text-[#007580]">
               Product
             </Link>
-            <Link href="/" className="hover:text-[#007580]">
+            <Link href="/faqs" className="hover:text-[#007580]">
               Pages
             </Link>
             <Link href="/about" className="hover:text-[#007580]">
@@ -33,8 +33,15 @@ export default function Header() {
           </li>
         </ul>
 
-        <div className="text-lg">
-          Contact: <span className="text-[#272343]"> (808) 555-0111</span>
+           <div className="text-lg">
+         <Link href="/contact"> <span className=" text-[#636270] hover:text-[#007580]">
+            Contact:
+          </span>
+            
+          </Link>
+          <span className=" text-[#272343]">
+            (808) 555-0111
+          </span>
         </div>
 
         <Sheet>
@@ -50,7 +57,7 @@ export default function Header() {
                 <Link href="/" className="hover:text-[#007580] my-3">
                   Shop
                 </Link>
-                <Link href="/" className="hover:text-[#007580] my-3">
+                <Link href="/product" className="hover:text-[#007580] my-3">
                   Product
                 </Link>
                 <Link href="/" className="hover:text-[#007580] my-3">
