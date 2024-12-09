@@ -91,7 +91,7 @@ export default function Cart(){
               <p className="text-xl font-bold">Total</p>
               <p className="text-xl font-bold">$198.00</p>
             </div>
-            <button className="w-[334.67px] h-[60px] rounded-full text-white bg-[#029FAE] font-medium">
+            <button className="w-[180px] h-[45px] md:w-[334.67px] md:h-[60px] rounded-full text-white bg-[#029FAE] font-medium">
               Member Checkout
             </button>
           </div>

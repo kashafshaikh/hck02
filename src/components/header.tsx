@@ -54,13 +54,13 @@ export default function Header() {
                 <Link href="/" className="hover:text-[#007580] my-3">
                   Home
                 </Link>
-                <Link href="/" className="hover:text-[#007580] my-3">
+                <Link href="/product" className="hover:text-[#007580] my-3">
                   Shop
                 </Link>
                 <Link href="/product" className="hover:text-[#007580] my-3">
                   Product
                 </Link>
-                <Link href="/" className="hover:text-[#007580] my-3">
+                <Link href="/faqs" className="hover:text-[#007580] my-3">
                   Pages
                 </Link>
                 <Link href="/about" className="hover:text-[#007580] my-3">
