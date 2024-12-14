@@ -4,11 +4,11 @@ export default function Featuredproduct() {
   return (
     <>
       <div className="max-w-[1321px] h-auto md:h-[461px] bg-white md:mx-auto mt-6">
-        <h1 className="font-semibold text-[#272343] text-[26px] md:text-[32px] py-4">
+        <h1 className="font-semibold text-[#272343] text-[26px] md:text-[32px] py-4 ml-4 md:ml-0">
           Featured Products
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4 md:ml-0">
+          <div className="w-[312px] h-[377px] relative mx-auto">
             <Image
               src="/(1).png"
               alt="chair"
@@ -32,7 +32,7 @@ export default function Featuredproduct() {
             </div>
           </div>
 
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
+          <div className="w-[312px] h-[377px] relative mx-auto">
             <Image
               src="/(2).png"
               alt="chair"
@@ -55,11 +55,8 @@ export default function Featuredproduct() {
               <div className="hover:bg-[#029FAE] bg-[#F0F2F3] text-black hover:text-white rounded-lg px-3 py-3"><LuShoppingCart size={20}/></div>
             </div>
           </div>
-
-
-
-
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
+          
+          <div className="w-[312px] h-[377px] relative mx-auto">
             <Image
               src="/(3).png"
               alt="chair"
@@ -76,7 +73,7 @@ export default function Featuredproduct() {
             </div>
           </div>
 
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
+          <div className="w-[312px] h-[377px] relative mx-auto">
             <Image
               src="/(4).png"
               alt="chair"

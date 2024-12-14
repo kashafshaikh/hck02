@@ -35,7 +35,7 @@ export default function Section01() {
             alt="zapier-logo"
             width={85}
             height={87}
-            className="w-auto max-h-[87px]"
+            className="w-auto max-h-[87px] mx-auto"
           />
         </div>
         <div>
@@ -44,7 +44,7 @@ export default function Section01() {
             alt="pipedrive-logo"
             width={107}
             height={109}
-            className="w-auto max-h-[109px]"
+            className="w-auto max-h-[109px] mx-auto"
           />
         </div>
         <div>
@@ -53,7 +53,7 @@ export default function Section01() {
             alt="cib-bank-logo"
             width={135}
             height={139}
-            className="w-auto max-h-[139px]"
+            className="w-auto max-h-[139px] mx-auto"
           />
         </div>
         <div>
@@ -62,7 +62,7 @@ export default function Section01() {
             alt="logo"
             width={63}
             height={65}
-            className="w-auto max-h-[65px]"
+            className="w-auto max-h-[65px] mx-auto"
           />
         </div>
         <div>
@@ -71,7 +71,7 @@ export default function Section01() {
             alt="logo"
             width={98}
             height={101}
-            className="w-auto max-h-[101px]"
+            className="w-auto max-h-[101px] mx-auto"
           />
         </div>
         <div>
@@ -80,7 +80,7 @@ export default function Section01() {
             alt="pandadoc-logo"
             width={113}
             height={115}
-            className="w-auto max-h-[115px]"
+            className="w-auto max-h-[115px] mx-auto"
           />
         </div>
         <div>
@@ -89,7 +89,7 @@ export default function Section01() {
             alt="logo"
             width={84}
             height={87}
-            className="w-auto max-h-[87px]"
+            className="w-auto max-h-[87px] mx-auto"
           />
         </div>
       </div>

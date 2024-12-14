@@ -6,7 +6,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 export default function Cart(){
   return (
     <div className="max-w-[1321px] mx-auto px-4 py-8 font-sans">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
         <div className="lg:col-span-2">
           <h2 className="text-[22px] font-medium pl-3 mb-6">Bag</h2>
 
@@ -19,7 +19,7 @@ export default function Cart(){
                 <h3 className="text-[16px] text-[#272343] mb-4">
                   Library Stool Chair
                 </h3>
-                <p className="text-[16px] text-[#757575] mb-3 font-normal">
+                <p className="text-[16px] text-[#757575] mb-8 font-normal">
                   Ashen Slate/Cobalt Bliss
                 </p>
                 <div className="flex space-x-12 mb-3">
@@ -36,7 +36,7 @@ export default function Cart(){
                 </div>
               </div>
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 absolute md:relative right-3">
               <p className="text-[16px] font-medium text-[#111111]">MRP: </p>
               <p className="text-[16px] font-medium text-[#111111]">$99</p>
             </div>
@@ -51,7 +51,7 @@ export default function Cart(){
                 <h3 className="text-[16px] font-medium text-[#272343] mb-4">
                   Library Stool Chair
                 </h3>
-                <p className="text-[15px] font-normal text-[#757575] mb-3">
+                <p className="text-[15px] font-normal text-[#757575] mb-8">
                   Ashen Slate/Cobalt Bliss
                 </p>
                 <div className="flex space-x-12 mb-3">
@@ -68,7 +68,7 @@ export default function Cart(){
                 </div>
               </div>
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 absolute md:relative right-3">
               <p className="text-[16px] font-medium text-[#111111]">MRP: </p>
               <p className="text-[16px] font-medium text-[#111111]">$99</p>
             </div>

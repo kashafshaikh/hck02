@@ -8,7 +8,7 @@ export default function Ourproduct() {
           Our Products
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4 md:ml-0">
+          <div className="w-[312px] h-[377px] relative mx-auto md:mx-0">
             <Image
               src="/(1).png"
               alt="chair"
@@ -32,7 +32,7 @@ export default function Ourproduct() {
             </div>
           </div>
 
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
+          <div className="w-[312px] h-[377px] relative mx-auto md:mx-0">
             <Image
               src="/(2).png"
               alt="chair"
@@ -57,7 +57,7 @@ export default function Ourproduct() {
           </div>
 
 
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
+          <div className="w-[312px] h-[377px] relative mx-auto md:mx-0">
             <Image
               src="/(3).png"
               alt="chair"
@@ -74,7 +74,7 @@ export default function Ourproduct() {
             </div>
           </div>
 
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
+          <div className="w-[312px] h-[377px] relative mx-auto md:mx-0">
             <Image
               src="/(4).png"
               alt="chair"
@@ -91,7 +91,7 @@ export default function Ourproduct() {
             </div>
           </div>
 
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4 md:ml-0">
+          <div className="w-[312px] h-[377px] relative mx-auto md:mx-0">
             <Image
               src="/(5).png"
               alt="chair"
@@ -115,7 +115,7 @@ export default function Ourproduct() {
             </div>
           </div>
 
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
+          <div className="w-[312px] h-[377px] relative mx-auto md:mx-0">
             <Image
               src="/(6).png"
               alt="chair"
@@ -140,7 +140,7 @@ export default function Ourproduct() {
           </div>
 
 
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
+          <div className="w-[312px] h-[377px] relative mx-auto md:mx-0">
             <Image
               src="/(7).png"
               alt="chair"
@@ -157,7 +157,7 @@ export default function Ourproduct() {
             </div>
           </div>
 
-          <div className="w-[312px] h-[377px] relative ml-2 sm:ml-4">
+          <div className="w-[312px] h-[377px] relative mx-auto md:mx-0">
             <Image
               src="/(1).png"
               alt="chair"
