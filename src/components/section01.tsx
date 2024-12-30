@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Section01() {
   return (
@@ -11,9 +12,12 @@ export default function Section01() {
           <h1 className="font-bold text-3xl md:text-[50px] my-4 leading-tight mx-8 md:mx-0">
             Best Furniture Collection For Your Interior
           </h1>
-          <button className="w-full max-w-[171px] h-[52px] bg-[#029FAE] text-white rounded-lg mt-4 mx-8 md:mx-0">
-            Shop Now
-          </button>
+
+          <Link href="/product">
+            <button className="w-full max-w-[171px] h-[52px] bg-[#029FAE] text-white rounded-lg mt-4 mx-8 md:mx-0">
+              Shop Now
+            </button>
+          </Link>
         </div>
 
         {/* Right Image */}

@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Link from "next/link";
 
-type Product = {
+export type Product = {
   id: number;
   title: string;
   price: number;
@@ -63,7 +63,7 @@ const ProductCard = ({ product }: { product: Product }) => (
 );
 
 export default function AllProduct() {
-  const products: Product[] = [
+     const products: Product[] = [
     { id: 1, title: "Library Stool Chair", price: 20, image: "/(1).png" },
     {
       id: 2,
@@ -96,10 +96,19 @@ export default function AllProduct() {
       image: "/about(1).jpg",
       isSale: true,
     },
+    { id: 9, title: "Foldable Outdoor Chair", price: 10, image: "/(6).png" },
+    {
+      id: 10,
+      title: "Leather Recliner Chair",
+      price: 150,
+      image: "/about(2).jpg",
+      isSale: true,
+      originalPrice: 200,
+    }, 
   ];
 
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="max-w-[1321px] container mx-auto px-4 py-20">
       <h1 className="text-3xl text-center font-semibold text-[#1C1B1F] tracking-tight mb-8">
         Our Products
       </h1>
