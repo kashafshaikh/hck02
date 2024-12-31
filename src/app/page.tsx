@@ -4,7 +4,6 @@ import HotProducts from "@/components/hotProducts";
 import Ourproduct from "@/components/ourProducts";
 import Section01 from "@/components/section01";
 
-
 export default function Home() {
   return (
     <>
