@@ -35,7 +35,7 @@ export default function Navbar() {
                  <div className="w-[150px] h-[80px] md:w-auto md:h-auto flex items-center">
                     <Image src="/Logo.png" alt="logo" height={40} width={166}/>
                  </div>
-                 <Link href="/cart">
+                 <Link href="/carts">
                  <div className=" bg-white w-[120px] h-[44px] relative rounded-lg flex items-center justify-center gap-3">
                     <div><LuShoppingCart size={20}/></div>
                     <p className="text-[#272343] font-sans font-semibold">Cart</p>

@@ -7,7 +7,7 @@ const page = () => {
   return (
       <div>
           
-          <AllProduct />
+          <AllProduct/>
           <Newsletter/>
       
     </div>
