@@ -1,7 +1,104 @@
 
+// "use client";
+// import { useState, useEffect } from "react";
+// import { FaSearch } from "react-icons/fa"; // Magnifying glass icon
+
+// interface Product {
+//   _id: string;
+//   title: string;
+//   slug: {
+//     current: string;
+//   };
+// }
+
+// const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "";
+// const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "";
+
+// const SearchBar = () => {
+//   const [products, setProducts] = useState<Product[]>([]);
+//   const [searchTerm, setSearchTerm] = useState("");
+//   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+//   const [showDropdown, setShowDropdown] = useState(false);
+
+//   useEffect(() => {
+//     const fetchProducts = async () => {
+//       try {
+//         const response = await fetch(
+//           `https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=*[_type == "products"]{_id,title,slug}`
+//         );
+
+//         if (!response.ok) {
+//           throw new Error("Failed to fetch products");
+//         }
+
+//         const data = await response.json();
+//         setProducts(data.result || []);
+//       } catch (error) {
+//         console.error("Error fetching products:", error);
+//       }
+//     };
+
+//     fetchProducts();
+//   }, []);
+
+//   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+//     const query = event.target.value.toLowerCase();
+//     setSearchTerm(query);
+
+//     if (query.length > 0) {
+//       setShowDropdown(true);
+//       const filtered = products.filter((product: Product) =>
+//         product.title.toLowerCase().includes(query)
+//       );
+//       setFilteredProducts(filtered);
+//     } else {
+//       setShowDropdown(false);
+//     }
+//   };
+
+//   return (
+//     <div className="max-w-[1321px] mx-auto">
+//     <div className="relative w-72 ml-6 md:ml-0">
+//       <div className="relative">
+//         <input
+//           type="text"
+//           placeholder="Search products..."
+//           value={searchTerm}
+//           onChange={handleSearch}
+//           onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
+//           className="border border-gray-300 p-2 w-full rounded-lg pl-10 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500"
+//         />
+//         <FaSearch className="absolute left-3 top-3 text-gray-500" />
+//       </div>
+
+//       {showDropdown && (
+//         <ul className="absolute w-full bg-white border border-gray-300 mt-1 max-h-40 overflow-auto rounded-lg shadow-lg z-10">
+//           {filteredProducts.length > 0 ? (
+//             filteredProducts.map((product) => (
+//               <li
+//                 key={product._id}
+//                 className="p-2 hover:bg-blue-500 hover:text-white cursor-pointer transition duration-200"
+//               >
+//                 <a href={`/product/${product.slug.current}`}>{product.title}</a>
+//               </li>
+//             ))
+//           ) : (
+//             <li className="p-2 text-gray-500 text-center">No product found</li>
+//           )}
+//         </ul>
+//       )}
+//     </div>
+//     </div>
+//   );
+// };
+
+// export default SearchBar;
+
+
 "use client";
-import { useState, useEffect } from "react";
-import { FaSearch } from "react-icons/fa"; // Magnifying glass icon
+import { useState, useEffect, useMemo } from "react";
+import { FaSearch } from "react-icons/fa";
+import { useRouter } from "next/navigation"; // ✅ For Smooth Navigation
 
 interface Product {
   _id: string;
@@ -17,8 +114,8 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "";
 const SearchBar = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const [showDropdown, setShowDropdown] = useState(false);
+  const router = useRouter(); // ✅ Router for smooth navigation
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -41,53 +138,52 @@ const SearchBar = () => {
     fetchProducts();
   }, []);
 
-  const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const query = event.target.value.toLowerCase();
-    setSearchTerm(query);
+  // 🛠 **Performance Optimization using useMemo**
+  const filteredProducts = useMemo(() => {
+    if (!searchTerm) return [];
+    return products.filter((product) =>
+      product.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }, [searchTerm, products]);
 
-    if (query.length > 0) {
-      setShowDropdown(true);
-      const filtered = products.filter((product: Product) =>
-        product.title.toLowerCase().includes(query)
-      );
-      setFilteredProducts(filtered);
-    } else {
-      setShowDropdown(false);
-    }
+  // ✅ **New Function: Handle Click on Suggestion**
+  const handleSelect = (slug: string, title: string) => {
+    setSearchTerm(title); // ✅ Update input field
+    setShowDropdown(false); // ✅ Instantly close dropdown
+    router.push(`/product/${slug}`); // ✅ Navigate without delay
   };
 
   return (
-    <div className="max-w-[1321px] mx-auto">
-    <div className="relative w-72 ml-6 md:ml-0">
+    <div className="relative w-72">
       <div className="relative">
         <input
           type="text"
           placeholder="Search products..."
           value={searchTerm}
-          onChange={handleSearch}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          onFocus={() => setShowDropdown(true)}
           onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
-          className="border border-gray-300 p-2 w-full rounded-lg pl-10 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500"
+          className="border border-gray-300 p-2 w-full rounded-lg pl-10 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <FaSearch className="absolute left-3 top-3 text-gray-500" />
       </div>
 
-      {showDropdown && (
+      {showDropdown && filteredProducts.length > 0 && (
         <ul className="absolute w-full bg-white border border-gray-300 mt-1 max-h-40 overflow-auto rounded-lg shadow-lg z-10">
-          {filteredProducts.length > 0 ? (
-            filteredProducts.map((product) => (
-              <li
-                key={product._id}
-                className="p-2 hover:bg-blue-500 hover:text-white cursor-pointer transition duration-200"
-              >
-                <a href={`/product/${product.slug.current}`}>{product.title}</a>
-              </li>
-            ))
-          ) : (
-            <li className="p-2 text-gray-500 text-center">No product found</li>
-          )}
+          {filteredProducts.map((product) => (
+            <li
+              key={product._id}
+              className="p-2 hover:bg-blue-500 hover:text-white cursor-pointer transition duration-200"
+              onMouseDown={(e) => {
+                e.preventDefault(); // ✅ Prevent input blur issue
+                handleSelect(product.slug.current, product.title);
+              }}
+            >
+              {product.title}
+            </li>
+          ))}
         </ul>
       )}
-    </div>
     </div>
   );
 };
