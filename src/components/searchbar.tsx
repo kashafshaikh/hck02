@@ -154,7 +154,8 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="relative w-72">
+    <div className="max-w-[1321px] mx-auto">
+    <div className="relative w-72 ml-6 md:ml-0">
       <div className="relative">
         <input
           type="text"
@@ -163,7 +164,7 @@ const SearchBar = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           onFocus={() => setShowDropdown(true)}
           onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
-          className="border border-gray-300 p-2 w-full rounded-lg pl-10 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="border border-gray-300 p-2 w-full rounded-lg pl-10 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-500"
         />
         <FaSearch className="absolute left-3 top-3 text-gray-500" />
       </div>
@@ -184,6 +185,7 @@ const SearchBar = () => {
           ))}
         </ul>
       )}
+    </div>
     </div>
   );
 };
