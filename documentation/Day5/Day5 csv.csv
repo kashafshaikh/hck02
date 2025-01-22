@@ -1,0 +1,7 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks,
+TC001,validate feature component product listing,open feature-product component > verify display product,product display correctly,product display correctly,Pass,none,-,no issues found,
+TC002,validate our product component product listing,open ourproduct component > verify display product,product display correctly,product display correctly,Pass,none,-,no issues found,
+TC003,validate all products component product listing,open allproducts component > verify product listing,product display correctly,product display correctly,Pass,none,-,no issues found,
+TC004,validate search functionality,open header component > verify search functionality,search and display that product that search,search and display that product that search,pass,low,-,no issues found,
+TC005,validate my all website responsive,open website in multiple screens and see responsive,check in all screens website correctly responsive,check in all screens website correctly responsive,pass,none,-,no issues found,
+TC006,validate stock correctly update from sanity after buying product,buy product and after that check product stock,"if user tries to purchase more quantity than available stock, an alert should appear and the quantity should not exceed the stock level","stock correctly update with alert handling, quantity update handled",pass,low,-,no issues fou,

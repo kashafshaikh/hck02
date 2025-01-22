@@ -1,0 +1,8 @@
+Test Case ID,Description,Steps,Expected Result,Actual Result,Status,Remarks
+TC001,Validate home page load,Open home page after deployment > Verify correctly load,Home page should load without errors,Home page loaded correctly,Pass,No issues found
+TC002,Validate all routes of website correctly load,Open routes step by step > Verify all routes correctly display,Open routes and check all pages correctly display data,Open routes and check all pages correctly display data,Pass,No issues found
+TC003,Validate all API Integration,Send data from frontend and check API response,API should return correct response like shipment and Stripe API,API returns correct response,Pass,No issues found
+TC004,Validate Page Load Speed,Open home page > Verify page load speed,Page load speed should be fast,Page load speed is fast,Pass,No issues found
+TC005,Validate Environment Variables,Environment variables should be secure and accessible,Environment variables should be secure and accessible,Environment variables accessible and secure,Pass,No issues found
+TC006,Validate Navigation,Navigate through pages and check menu navigation,User should be able to navigate to all pages from the menu,Menu navigation working fine,Pass,No issues found
+TC007,Check cart functionality,Add items to cart > Verify cart updates,Cart should update correctly,Cart updates correctly,Pass,No issues found
