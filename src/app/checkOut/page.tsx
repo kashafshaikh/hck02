@@ -257,7 +257,7 @@ const ShippingRatesPage = () => {
         {trackingObj && (
           <div className="mt-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Tracking Information
+              Tracking Information (We are using ShipEngine test API key so order will not trace)
             </h2>
             <p>Tracking number: {trackingObj.trackingNumber}</p>
             <p>Label ID: {trackingObj.labelId}</p>
