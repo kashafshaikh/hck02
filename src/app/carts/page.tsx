@@ -203,12 +203,19 @@ export default function Carts() {
                   $ {total.toFixed(2)}
                 </p>
               </div>
-              <button
+              {/* <button
                 className="w-[180px] h-[45px] md:w-[334.67px] md:h-[60px] rounded-full text-white bg-[#029FAE] font-medium"
                 onClick={() => OrderConfirm()}
               >
-                Confirm Order
-              </button>
+                Member Checkout
+              </button> */}
+
+             <Link href="/checkOut">
+                 <button className="w-[180px] h-[45px] md:w-[334.67px] md:h-[60px] rounded-full text-white bg-[#029FAE] font-medium">
+                    Member Checkout
+                </button>
+             </Link>
+
             </div>
           </div>
         </div>
